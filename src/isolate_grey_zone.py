@@ -2,11 +2,12 @@ import os
 import re
 import pandas as pd
 from rapidfuzz import fuzz
+from pathlib import Path
 
 # Define local paths relative to this script's directory
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "hsis_raw_schema.csv")
-OUTPUT_FILE = os.path.join(BASE_DIR, "isolated_grey_zone.csv")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_FILE = PROJECT_ROOT / "data" / "raw" / "hsis_raw_schema.csv"
+OUTPUT_FILE = PROJECT_ROOT / "outputs" / "isolated_grey_zone.csv"
 
 def main():
     print("⏳ Reading flat schema metadata fields...")
