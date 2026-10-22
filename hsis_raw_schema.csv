@@ -1,0 +1,155 @@
+State,File,Variable_Name,Description,Field_Type
+WA,Roadway,TOTAL_AADT,Average Annual Daily Traffic,Numeric
+WA,Roadway,ACCESS_CONTROL,Access Control Level,Text
+WA,Roadway,CITY_NAME,City Location,Text
+WA,Roadway,DIVIDED_INDICATOR,Median Divided Indicator,Coded
+WA,Roadway,FROM_MEASURE,Beginning Milepost of Segment,Numeric
+WA,Roadway,TO_MEASURE,Ending Milepost of Segment,Numeric
+WA,Roadway,FUNCTIONAL_CLASS,Federal Functional Classification,Text
+WA,Roadway,SPEED_LIMIT,Posted Speed Limit,Numeric
+WA,Roadway,ROUTE_ID,Unique Route Identifier,Text
+WA,Crash,CASENO,Unique Crash Case Number,Numeric
+WA,Crash,ACC_DATE,Date of Incident,Date
+WA,Crash,TIME,Crash Time (24-Hour Clock),Numeric
+WA,Crash,WEEKDAY,Day of Week,Coded
+WA,Crash,LIGHT,Light Condition,Text
+WA,Crash,WEATHER,Weather Condition,Text
+WA,Crash,RDSURF,Roadway Surface Condition,Text
+WA,Crash,SEVERITY,Crash Severity Scale (KABCO),Text
+OH,Roadway,NLFID,Route Identifier (Primary Key),Text
+OH,Roadway,BEGIN_MILEPOST,Start Log Point of Segment,Numeric
+OH,Roadway,END_MILEPOST,End Log Point of Segment,Numeric
+OH,Roadway,LANES_NBR,Total Number of Driving Lanes,Numeric
+OH,Roadway,MEDIAN_TYPE_CD,Median Classification Code,Coded
+OH,Roadway,MEDIAN_WIDTH_NBR,Total Width of Median (Feet),Numeric
+OH,Roadway,POSTED_SPEED_NBR,Speed Limit of Road,Numeric
+OH,Roadway,ADT_TOTAL_NBR,Weighted Average Total AADT,Numeric
+OH,Crash,DOCUMENT_NBR,Unique Identification Number,Numeric
+OH,Crash,CRASH_DATE,Date and Time of Crash,Date
+OH,Crash,CRASH_SEVERITY_CD,Categorized Crash Severity,Coded
+OH,Crash,LIGHT_COND_PRIMARY_CD,Primary Light Ambient Status,Coded
+OH,Crash,ROAD_COND_PRIMARY_CD,Road Surface State,Coded
+OH,Crash,WEATHER_COND_CD,Weather Category Code,Coded
+OH,Crash,U1_FIRST_HARMFUL_CD,First Harmful Event Code,Coded
+MN,Roadway,ROUTE_ID,Route ID,Text
+MN,Roadway,AADT,AADT,Numeric
+MN,Roadway,TOTAL_LANES,Number of Lanes,Numeric
+MN,Roadway,MEDIAN_TYPE,Median Type,Text
+MN,Crash,INCIDENT_ID,Incident ID,Numeric
+MN,Crash,DATE_TIME_OF_INCIDENT,Date and Time Crash Occurred,Date
+MN,Crash,CRASH_SEVERITY_CODE,Crash Severity,Coded
+MN,Crash,WEATHER_CODE,Weather Conditions 1,Coded
+MN,Crash,LIGHT_CONDITION_CODE,Light Conditions,Coded
+ME,Roadway,PRIMARY_ROUTE_NUMBER,Route ID,Text
+ME,Roadway,FACTORED_AADT,Factored AADT,Numeric
+ME,Roadway,THRU_LANE_COUNT,Number of Through Lanes,Numeric
+ME,Roadway,MEDIAN_TYPE_DESCR,Median Type,Text
+ME,Crash,MDOTID,Crash ID,Text
+ME,Crash,ACCIDENT_DATE,Crash Date,Date
+ME,Crash,INJURY_SEVERITY,Severity,Coded
+ME,Crash,WEATHER_CONDITION_DESCR,Weather Condition,Text
+ME,Crash,LIGHT_CONDITION_DESCR,Light Condition,Text
+IL,Roadway,INVENTORY,Inventory Route ID,Text
+IL,Roadway,AADT,Annual Average Daily Traffic,Numeric
+IL,Roadway,LNS,Total Number of Lanes,Numeric
+IL,Roadway,SP_LIM,Roadway Speed Limit,Numeric
+IL,Crash,CRASHID,Crash ID,Numeric
+IL,Crash,CRASHDATE,Date Accident Occurred,Date
+IL,Crash,CRASHSEVERITY,Collision Severity,Text
+IL,Crash,WEATHERCODE,Weather,Coded
+IL,Crash,LIGHTCONDITIONCODE,Light Condition,Coded
+NC,Roadway,ROUTEID,Route ID,Text
+NC,Roadway,AADT,Annual Average Daily Traffic,Numeric
+NC,Roadway,THRULANECOUNT,Number of Lanes - Total,Numeric
+NC,Roadway,SPEEDLIMIT,Speed Limit,Numeric
+NC,Crash,CASENO,Case Number,Numeric
+NC,Crash,CRASH_DATE,Crash Date,Date
+NC,Crash,SEVERITY,Crash Severity,Coded
+NC,Crash,WEATHER1,Weather Condition 1,Coded
+NC,Crash,LIGHT,Light Condition,Coded
+CLT,Roadway,WHOLESTNAM,Whole Street Name,Text
+CLT,Roadway,AADT,Annual Average Daily Traffic,Numeric
+CLT,Roadway,NUMBEROFLA,Number of Lanes,Numeric
+CLT,Roadway,SPEEDLIMIT,Speed Limit,Coded
+CLT,Crash,CRSH_ID,Crash ID,Numeric
+CLT,Crash,DATE_VAL,Date of Crash,Date
+CLT,Crash,CRSH_LEVL,Crash Severity,Coded
+CLT,Crash,WTHR,Weather,Text
+CLT,Crash,LIT,Light Condition,Text
+CA,Roadway,CNTYRTE,Route ID,Text
+CA,Roadway,AADT,AADT,Numeric
+CA,Roadway,NO_LANES,Total Number of Lanes,Numeric
+CA,Roadway,DESG_SPD,Design Speed,Numeric
+USAH,Roadway,Year_Record,Calendar year for the data,Numeric
+USAH,Roadway,State_Code,State FIPS code,Numeric
+USAH,Roadway,Metadata_Type,Metadata Type,Text
+USAH,Roadway,F_System,Functional System,Numeric
+USAH,Roadway,Is_Urban,Rural or Urban,Text
+USAH,Roadway,Is_State_Owned,On State/Off State System,Text
+USAH,Roadway,Value_Numeric,Numeric Value,Numeric
+USAH,Roadway,AADT_Pct_Actual,Percent total section-level AADTs reported that are based on actual counts for the reported data year,Numeric
+USAH,Roadway,AADT_24,Number of permanent and portable counter locations that were counted for a duration of 24 hours or more,Numeric
+USAH,Roadway,AADT_48,Number of permanent and portable counter locations that were counted for a duration of 48 hours or more,Numeric
+USAH,Roadway,AADT_Season,AADT Seasonal Adjustment,Numeric
+USAH,Roadway,AADT_Week,AADT Day-of-Week Adjustment,Numeric
+USAH,Roadway,AADT_Axle,AADT Axle Adjustment,Numeric
+USAH,Roadway,AADT_Growth,AADT Growth Adjustment,Numeric
+USAH,Roadway,Class_Pct_Actual,"Percent of class AADTs (i.e., Single-unit Truck & Bus, and Combination Truck AADT) reported that are based on actual counts for the reported data year",Numeric
+USAH,Roadway,Class_24,Number of permanent and portable classification count locations that were counted for a duration of 24 hours or more,Numeric
+USAH,Roadway,Class_48,The number of permanent and portable classification count locations that were counted for a duration of 48 hours or more,Numeric
+USAH,Roadway,Class_Season,Class Seasonal Adjustment,Coded
+USAH,Roadway,Class_Week,Class Weekly Adjustment,Coded
+USAH,Roadway,Class_Growth,Class Growth Adjustment,Coded
+USAH,Roadway,Travel_Source,Source of Travel Data,Coded
+USAH,Roadway,Travel_Volume_Type,Type of volume counts used for reporting purposes,Coded
+USAH,Roadway,Travel_Class_Type,Type of classification counts used for reporting purposes,Coded
+USAH,Roadway,Travel_QA,Quality assurance program exists for any traffic data,Coded
+USAH,Roadway,IRI_Equip_Type,Type of equipment used predominately for measuring the International Roughness Index (IRI),Coded
+USAH,Roadway,IRI_Report_Interval,Longitudinal distance between the outputs of a profile index (IRI) value. (Ref: AASHTO Designation: M328-14; 3.1.15),Numeric
+USAH,Roadway,IRI_Sample_Interval,"Longitudinal distance between data capture points. These data points are combined to create one profile data point. These points, in turn, may be combined to create a final value in the reported profile. (Ref: AASHTO Designation M328-14; 3.1.18)",Numeric
+USAH,Roadway,Rutting_Method,Method (Manual or Automated) used to collect most of the rutting data.,Coded
+USAH,Roadway,Rutting_Equip_Type,Type of equipment used predominately for collection of rutting data.,Coded
+USAH,Roadway,Rutting_Num_Sensors,Number of sensors for the equipment used predominately for collection of rutting data,Coded
+USAH,Roadway,Rutting_Interval,For manual rutting method: sampling interval. (Ref: AASHTO Designation R48-10(2013); 7.1.6) or For automatic rutting method: report interval-the travel distance between the reported data. (Ref: AASHTO Designation PP70-14 (2016); 4.2),Numeric
+USAH,Roadway,Rutt_Trans_Prof_Interval,Transverse profile data point separation distance. (Ref: AASHTO Designation PP70-14 (2016); 5.1),Numeric
+USAH,Roadway,Faulting_Interval,Sampling interval. (Ref: AASHTO Designation R36-13; 5.2.5),Numeric
+USAH,Roadway,Faulting_Method,Method (Manual or Automated) used to collect most of the faulting data.,Coded
+USAH,Roadway,Faulting_Equipment_Type,Type of equipment used predominately for measuring the faulting data,Coded
+USAH,Roadway,Cracking_Pct_Equip,Type of equipment used predominately for measuring the percent of cracking (Cracking_Percent).,Coded
+USAH,Roadway,Cracking_Method,Protocol used to identify pavement distresses,Coded
+USAH,Roadway,Pave_Rep_Method,"Reporting method for pavement distresses and related data items (e.g., IRI, PSR, Surface Type, etc.) associated with divided Interstate roadway sections",Coded
+USAH,Roadway,Ramp_Termini_Desc,Ramp Termini,Coded
+USAH,Roadway,Ramp_Traf_Est_Method,Ramp Traffic Estimation Method,Coded
+USAN,Roadway,Tmc ,TMC Path Identifier ,Numeric
+USAN,Roadway,TmcType ,Type of TMC Code ,Text
+USAN,Roadway,RoadNumber ,Common name or route number ,Text
+USAN,Roadway,RoadName ,Associated Road Name  ,Text
+USAN,Roadway,Intersection ,Associated Street ,Text
+USAN,Roadway,TmcLinear ,Associated Linear TMC  ,Text
+USAN,Roadway,Country ,Country ,Text
+USAN,Roadway,State ,State ,Text
+USAN,Roadway,Road_order ,Numerical road order of TMC code ,Numeric
+USAN,Roadway,Timezone_name ,Timezone name ,Text
+USAN,Roadway,County ,County ,Text
+USAN,Roadway,Zip ,Postal Code ,Numeric
+USAN,Roadway,Direction ,Direction ,Text
+USAN,Roadway,StartLat ,Beginning Latitude ,Numeric
+USAN,Roadway,Type ,Point Location Type ,Text
+USAN,Roadway,Isprimary ,Denotation of overlapping segments ,Numeric
+USAN,Roadway,StartLong ,Beginning Longitude ,Numeric
+USAN,Roadway,EndLat ,Ending Latitude ,Numeric
+USAN,Roadway,EndLong ,Ending Longitude ,Numeric
+USAN,Roadway,Miles ,Length of Segment ,Numeric
+USAN,Roadway,FRC ,Road class (TMC FRC) ,Text
+USAN,Roadway,Border_Set ,Border Set ,Numeric
+USAN,Roadway,Active_start_date ,TMC Code Start Date ,Date
+USAN,Roadway,Active_end_date ,TMC Code End Date ,Date
+USAN,Roadway,NHS_Pct ,Percent of TMC Path on NHS ,Numeric
+USAN,Roadway,Strhnt_Pct ,Percent of TMC Path on STRAHNET ,Numeric
+USAN,Roadway,ThruLanes_unidir ,Estimated Unidirectional Thru Lanes ,Numeric
+USAN,Roadway,AADT_unidir ,"Estimated Unidirectional 
+Average Annual Daily 
+Traffic ",Numeric
+USAN,Roadway,AADT_Singl_unidir ,"Estimated Unidirectional Single-Unit Truck & Bus 
+AADT ",Numeric
+USAN,Roadway,AADT_Combi_unidir ,Estimated Unidirectional Combination Truck AADT ,Numeric
