@@ -1,10 +1,4 @@
-os
-re
-pandas as pd
+pandas
 rapidfuzz
-pathlib
-difflib
-json
-typing
 pydantic
 openai
