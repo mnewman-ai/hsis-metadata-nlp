@@ -1,8 +1,10 @@
 import os
 import pandas as pd
+from pathlib import Path
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "isolated_grey_zone.csv")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_FILE = PROJECT_ROOT / "outputs" / "isolated_grey_zone.csv"
+OUTPUT_DIR = PROJECT_ROOT / "outputs"
 
 def get_row_classification(field_a, field_b):
     """
@@ -107,7 +109,7 @@ def main():
 
     print("\n💾 Writing ground-truth files to local directory:")
     for tier, filename in output_targets.items():
-        file_path = os.path.join(BASE_DIR, filename)
+        file_path = OUTPUT_DIR / filename
         output_df = pd.DataFrame(tier_buckets[tier], columns=column_schema)
         output_df.to_csv(file_path, index=False)
         print(f"   ↳ {filename}: Logged {len(output_df)} seed records.")
