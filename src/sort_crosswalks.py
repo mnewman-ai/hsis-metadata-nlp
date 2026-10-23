@@ -11,7 +11,8 @@ def get_row_classification(field_a, field_b):
     Evaluates field pairs using transportation domain rules 
     and assigns them to Tier 1, Tier 2, Tier 3, or Unrelated.
     """
-    fa, fb = str(field_a).upper().strip(), str(field_b).upper().strip()
+    fa = str(field_a).upper().replace("_", " ").strip()
+    fb = str(field_b).upper().replace("_", " ").strip()
     
     # --- TIER 1: DIRECT EQUIVALENCE ---
     if ("WEATHER" in fa and "WEATHER" in fb) or \
