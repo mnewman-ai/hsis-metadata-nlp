@@ -1,13 +1,15 @@
 import pandas as pd
 from difflib import SequenceMatcher
 import os
+from pathlib import Path
 
 # Define paths relative to script location
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-INPUT_FILE = os.path.join(BASE_DIR, "raw_data.csv")
-OUTPUT_FILE = os.path.join(BASE_DIR, "step3_candidate_matches.csv")
+# Define paths relative to the project root
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+INPUT_FILE = PROJECT_ROOT / "data" / "legacy" / "raw_data.csv"
+OUTPUT_FILE = PROJECT_ROOT / "outputs" / "step3_candidate_matches.csv"
 
-# Check if input file exists
+# Check if input file exists 
 if not os.path.exists(INPUT_FILE):
     raise FileNotFoundError(f"Could not find '{INPUT_FILE}' in the script directory.")
 
