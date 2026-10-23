@@ -3,3 +3,5 @@ rapidfuzz
 pydantic
 openai
 google-genai
+sentence-transformers
+torch
