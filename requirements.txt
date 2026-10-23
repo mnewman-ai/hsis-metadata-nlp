@@ -2,3 +2,4 @@ pandas
 rapidfuzz
 pydantic
 openai
+google-genai
