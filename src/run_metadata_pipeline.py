@@ -4,8 +4,9 @@ import pandas as pd
 from typing import Literal
 from pydantic import BaseModel, Field
 from openai import OpenAI
+from pathlib import Path
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 # ==========================================
 # JULY 10 TASK: SCHEMA-CONSTRAINED GUARDS
@@ -40,7 +41,7 @@ def load_few_shot_anchors():
     ]
     
     for filename in target_files:
-        file_path = os.path.join(BASE_DIR, filename)
+        file_path = PROJECT_ROOT / "outputs" / filename
         if os.path.exists(file_path):
             df = pd.read_csv(file_path)
             # Sample up to 2 items from each file if available
