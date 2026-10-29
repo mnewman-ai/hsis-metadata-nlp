@@ -1,7 +1,7 @@
 import argparse
 import re
 from pathlib import Path
-
+import json
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 
@@ -16,15 +16,8 @@ def clean_text(value):
     return re.sub(r"\s+", " ", str(value)).strip()
 
 
-def normalize_field_name(value):
-    """Normalize field names for rule comparisons."""
-    return clean_text(value).upper().replace("_", " ")
-
-
 def find_column(df, possible_names):
-    """
-    Find the first column whose normalized name matches one of the options.
-    """
+    """Find the first column whose normalized name matches an allowed name."""
     normalized_columns = {
         re.sub(r"[^a-z0-9]", "", column.lower()): column
         for column in df.columns
@@ -38,271 +31,248 @@ def find_column(df, possible_names):
     return None
 
 
-def load_and_standardize_csv(csv_path):
-    """
-    Read one CSV and standardize its columns into the project's common schema.
-    """
+def load_state_schema(csv_path):
+    """Load the combined state metadata CSV."""
     df = pd.read_csv(csv_path)
 
-    state_col = find_column(df, ["State", "state"])
-    file_col = find_column(df, ["File", "file", "File_Name", "filename"])
-    variable_col = find_column(
-        df,
-        ["Variable_Name", "Variable Name", "Field_Name", "Field Name", "variable"]
-    )
-    description_col = find_column(
-        df,
-        [
-            "Description",
-            "Variable_Description",
-            "Variable Description",
-            "Field_Description",
-            "Field Description",
-        ],
-    )
-    field_type_col = find_column(df, ["Field_Type", "Field Type", "type"])
+    required_columns = [
+        "State",
+        "File",
+        "Variable_Name",
+        "Description",
+        "Field_Type",
+    ]
 
-    if variable_col is None or description_col is None:
+    missing_columns = [column for column in required_columns if column not in df.columns]
+
+    if missing_columns:
         raise ValueError(
-            f"\n{csv_path.name} is missing required metadata columns.\n"
-            f"It must contain a variable-name column and a description column.\n"
-            f"Columns found: {list(df.columns)}"
+            f"State schema is missing columns: {missing_columns}. "
+            f"Found: {list(df.columns)}"
         )
 
-    # If the file has no State column, use the filename as a temporary state/source label.
-    source_name = csv_path.stem.upper()
-
-    standardized = pd.DataFrame({
-        "state": (
-            df[state_col].apply(clean_text)
-            if state_col is not None
-            else source_name
-        ),
-        "file": (
-            df[file_col].apply(clean_text)
-            if file_col is not None
-            else csv_path.name
-        ),
-        "variable_name": df[variable_col].apply(clean_text),
-        "description": df[description_col].apply(clean_text),
-        "field_type": (
-            df[field_type_col].apply(clean_text)
-            if field_type_col is not None
-            else ""
-        ),
-        "source_csv": csv_path.name,
+    state_df = pd.DataFrame({
+        "state": df["State"].apply(clean_text),
+        "file": df["File"].apply(clean_text),
+        "variable_name": df["Variable_Name"].apply(clean_text),
+        "description": df["Description"].apply(clean_text),
+        "field_type": df["Field_Type"].apply(clean_text),
     })
 
-    standardized = standardized[
-        (standardized["variable_name"] != "")
-        | (standardized["description"] != "")
+    state_df = state_df[
+        (state_df["variable_name"] != "") | (state_df["description"] != "")
     ].copy()
 
-    standardized["embedding_text"] = standardized.apply(
+    state_df["embedding_text"] = state_df.apply(
         lambda row: (
-            f"Variable name: {row['variable_name']}. "
+            "Domain: Highway safety and roadway metadata. "
+            f"State field name: {row['variable_name']}. "
             f"Description: {row['description']}. "
             f"Field type: {row['field_type']}."
         ),
         axis=1,
     )
 
-    return standardized
+    return state_df
 
 
-def classify_relationship(field_a, field_b):
-    """
-    Apply simple deterministic rules after SBERT identifies a candidate pair.
-    """
-    fa = normalize_field_name(field_a)
-    fb = normalize_field_name(field_b)
+def load_master_schema(csv_path):
+    """Load the reconstructed HSIS master target schema."""
+    df = pd.read_csv(csv_path)
 
-    if fa == fb:
-        return (
-            "Equivalent",
-            False,
-            "The two fields have the same normalized variable name."
+    required_columns = ["Master_Field", "Description", "Field_Type"]
+    missing_columns = [column for column in required_columns if column not in df.columns]
+
+    if missing_columns:
+        raise ValueError(
+            f"Master schema is missing columns: {missing_columns}. "
+            f"Found: {list(df.columns)}"
         )
 
-    if (
-        ("WEATHER" in fa and "WEATHER" in fb)
-        or ("SPEED LIMIT" in fa and "SPEED" in fb and "DESG" not in fb)
-        or (fa == "TOTAL AADT" and fb == "AADT")
-        or (fb == "TOTAL AADT" and fa == "AADT")
-    ):
-        return (
-            "Equivalent",
-            False,
-            "Direct schema translation; no mathematical transformation is required."
-        )
+    master_df = pd.DataFrame({
+        "master_field": df["Master_Field"].apply(clean_text),
+        "master_description": df["Description"].apply(clean_text),
+        "master_field_type": df["Field_Type"].apply(clean_text),
+    })
 
-    if (
-        ("AADT" in fa or "ADT" in fa)
-        and ("AADT" in fb or "ADT" in fb)
-    ):
+    master_df = master_df[
+        (master_df["master_field"] != "") | (master_df["master_description"] != "")
+    ].copy()
+
+    master_df["embedding_text"] = master_df.apply(
+        lambda row: (
+            "Domain: Highway safety and roadway metadata. "
+            f"Master target field: {row['master_field']}. "
+            f"Description: {row['master_description']}. "
+            f"Field type: {row['master_field_type']}."
+        ),
+        axis=1,
+    )
+
+    return master_df
+
+
+def classify_relationship(state_field, master_field):
+    """Assign an initial crosswalk relationship label."""
+    state_name = state_field.upper().replace("_", " ")
+    master_name = master_field.upper().replace("_", " ")
+
+    if state_name == master_name:
+        return "Equivalent", False, "Direct equivalent field-name match."
+
+    if ("AADT" in state_name or "ADT" in state_name) and "AADT" in master_name:
         return (
             "Formulaic_Overlap",
             True,
-            "The fields are traffic-volume measures that may require a deterministic transformation such as weighting, aggregation, or seasonal adjustment."
-        )
-
-    if (
-        (("LIMIT" in fa or "NBR" in fa or "LIM" in fa) and "DESG SPD" in fb)
-        or (("LIMIT" in fb or "NBR" in fb or "LIM" in fb) and "DESG SPD" in fa)
-    ):
-        return (
-            "Conceptual_Overlap",
-            False,
-            "The fields are related speed concepts but may represent different operational definitions."
+            "Traffic-volume fields may require aggregation, adjustment, or weighting validation."
         )
 
     return (
-        "Candidate_Review",
+        "Conceptual_Overlap",
         False,
-        "Semantic similarity exceeded the threshold, but no deterministic crosswalk rule was identified."
+        "Semantic candidate match; confirm field meaning and any required transformation."
     )
 
+def assign_decision_zone(similarity_score):
+    """Assign the required action based on semantic similarity."""
+    if similarity_score >= 0.82:
+        return "Auto_Accept"
+    if similarity_score >= 0.70:
+        return "HITL_Review"
+    return "State_Unique"
 
-def build_crosswalk_records(df, threshold):
-    """
-    Create SBERT embeddings, compare records from different states, and retain
-    pairs at or above the requested cosine-similarity threshold.
-    """
+def build_crosswalk_records(state_df, master_df):
+    """Match every state field to its best master target field."""
     print(f"Loading SBERT model: {MODEL_NAME}")
     model = SentenceTransformer(MODEL_NAME)
 
-    print(f"Creating embeddings for {len(df)} metadata records...")
-    embeddings = model.encode(
-        df["embedding_text"].tolist(),
+    print(f"Creating embeddings for {len(state_df)} state metadata records...")
+    state_embeddings = model.encode(
+        state_df["embedding_text"].tolist(),
         normalize_embeddings=True,
         show_progress_bar=True,
     )
 
+    print(f"Creating embeddings for {len(master_df)} master target fields...")
+    master_embeddings = model.encode(
+        master_df["embedding_text"].tolist(),
+        normalize_embeddings=True,
+        show_progress_bar=True,
+    )
+
+    # Normalized embedding dot product equals cosine similarity.
+    similarity_matrix = state_embeddings @ master_embeddings.T
+
     records = []
 
-    # Because embeddings are normalized, dot product equals cosine similarity.
-    for i in range(len(df)):
-        for j in range(i + 1, len(df)):
-            row_a = df.iloc[i]
-            row_b = df.iloc[j]
+    for state_index, state_row in state_df.iterrows():
+        best_master_index = similarity_matrix[state_index].argmax()
+        best_score = float(similarity_matrix[state_index][best_master_index])
+        decision_zone = assign_decision_zone(best_score)
+        master_row = master_df.iloc[best_master_index]
 
-            # Do not create crosswalks within the same state.
-            if row_a["state"] == row_b["state"]:
-                continue
-
-            similarity_score = float(embeddings[i] @ embeddings[j])
-
-            if similarity_score < threshold:
-                continue
-
-            relationship_type, formula_applicable, transformation_logic = (
-                classify_relationship(
-                    row_a["variable_name"],
-                    row_b["variable_name"],
-                )
+        relationship_type, formula_applicable, transformation_logic = (
+            classify_relationship(
+                state_row["variable_name"],
+                master_row["master_field"],
             )
+        )
 
-            records.append({
-                "state_A": row_a["state"],
-                "file_A": row_a["file"],
-                "field_state_A": row_a["variable_name"],
-                "description_A": row_a["description"],
-                "field_type_A": row_a["field_type"],
-                "source_csv_A": row_a["source_csv"],
-                "state_B": row_b["state"],
-                "file_B": row_b["file"],
-                "field_state_B": row_b["variable_name"],
-                "description_B": row_b["description"],
-                "field_type_B": row_b["field_type"],
-                "source_csv_B": row_b["source_csv"],
-                "semantic_similarity": round(similarity_score, 4),
-                "relationship_type": relationship_type,
-                "mathematical_formula_applicable": formula_applicable,
-                "transformation_logic": transformation_logic,
-                "review_status": "candidate",
-            })
+        records.append({
+            "state": state_row["state"],
+            "file": state_row["file"],
+            "source_field": state_row["variable_name"],
+            "source_description": state_row["description"],
+            "source_field_type": state_row["field_type"],
+            "master_field": master_row["master_field"],
+            "master_description": master_row["master_description"],
+            "master_field_type": master_row["master_field_type"],
+            "semantic_similarity": round(best_score, 4),
+            "decision_zone": decision_zone,
+            "HITL_Verified": (
+                "Pending" if decision_zone == "HITL_Review" else "Not_Required"
+            ),
+            "Reviewer_Notes": "",
+            "relationship_type": relationship_type,
+            "mathematical_formula_applicable": formula_applicable,
+            "transformation_logic": transformation_logic,
+        })
 
     return pd.DataFrame(records)
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Generate semantic cross-state metadata crosswalk candidates."
+        description="Match state metadata fields to HSIS master target fields."
     )
 
     parser.add_argument(
-        "--input_dir",
+        "--state_schema",
         required=True,
-        help="Folder containing one or more input CSV metadata dictionaries.",
+        help="Path to the combined state metadata CSV.",
     )
 
+    parser.add_argument(
+        "--master_schema",
+        required=True,
+        help="Path to the HSIS master target schema CSV.",
+    )
     parser.add_argument(
         "--output",
         required=True,
-        help="Path for the generated master crosswalk CSV.",
+        help="Path for the generated crosswalk CSV.",
     )
-
+    
     parser.add_argument(
-        "--threshold",
-        type=float,
-        default=0.82,
-        help="Minimum SBERT cosine-similarity score from 0 to 1. Default: 0.82",
+        "--audit_output",
+        default="logs/hitl_audit_queue.json",
+        help="Path for HITL review records in JSON format.",
     )
 
     args = parser.parse_args()
 
-    if not 0 <= args.threshold <= 1:
-        raise ValueError("--threshold must be between 0 and 1.")
+    state_schema_path = Path(args.state_schema)
+    master_schema_path = Path(args.master_schema)
+    output_path = Path(args.output)
+    audit_output_path = Path(args.audit_output)
 
-    input_dir = Path(args.input_dir)
-    output_file = Path(args.output)
+    if not state_schema_path.exists():
+        raise FileNotFoundError(f"State schema file not found: {state_schema_path}")
 
-    if not input_dir.exists() or not input_dir.is_dir():
-        raise FileNotFoundError(
-            f"Input directory does not exist: {input_dir}"
-        )
+    if not master_schema_path.exists():
+        raise FileNotFoundError(f"Master schema file not found: {master_schema_path}")
 
-    csv_files = sorted(input_dir.glob("*.csv"))
+    state_df = load_state_schema(state_schema_path)
+    master_df = load_master_schema(master_schema_path)
 
-    if not csv_files:
-        raise FileNotFoundError(
-            f"No CSV files were found inside: {input_dir}"
-        )
+    crosswalk_df = build_crosswalk_records(state_df, master_df)
 
-    print(f"Found {len(csv_files)} CSV file(s) in {input_dir}")
-
-    all_data = []
-
-    for csv_path in csv_files:
-        print(f"Reading: {csv_path.name}")
-        standardized_df = load_and_standardize_csv(csv_path)
-        all_data.append(standardized_df)
-
-    combined_df = pd.concat(all_data, ignore_index=True)
-
-    unique_states = combined_df["state"].nunique()
-
-    if unique_states < 2:
-        raise ValueError(
-            "The engine needs metadata from at least two different states. "
-            "Your input files currently contain only one state/source label."
-        )
-
-    crosswalk_df = build_crosswalk_records(combined_df, args.threshold)
-
-    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
 
     crosswalk_df = crosswalk_df.sort_values(
-        by=["semantic_similarity"],
-        ascending=False,
+        by=["state", "semantic_similarity"],
+        ascending=[True, False],
     )
 
-    crosswalk_df.to_csv(output_file, index=False)
+    crosswalk_df.to_csv(output_path, index=False)
+    hitl_queue = crosswalk_df[
+        crosswalk_df["decision_zone"] == "HITL_Review"
+    ].copy()
+
+    audit_output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    hitl_queue.to_json(
+        audit_output_path,
+        orient="records",
+        indent=2,
+    )
 
     print("\nPipeline complete.")
-    print(f"Input records processed: {len(combined_df)}")
-    print(f"Candidate crosswalks found: {len(crosswalk_df)}")
-    print(f"Output written to: {output_file}")
+    print(f"State fields processed: {len(state_df)}")
+    print(f"Master target fields: {len(master_df)}")
+    print(f"Output written to: {output_path}")
+    print(f"HITL audit records: {len(hitl_queue)}")
+    print(f"Audit queue written to: {audit_output_path}")
 
 
 if __name__ == "__main__":

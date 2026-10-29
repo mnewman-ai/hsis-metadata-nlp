@@ -1,0 +1,5 @@
+Master_Field,Description,Field_Type
+LANE_WIDTH,Width of a travel lane,Numeric
+POSTED_SPEED_LIMIT,Legally posted speed limit,Numeric
+TOTAL_AADT,Average annual daily traffic volume,Numeric
+PRIMARY_WEATHER,Primary weather condition associated with the record,Coded
