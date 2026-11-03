@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Define local paths relative to this script's directory
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-INPUT_FILE = PROJECT_ROOT / "data" / "raw" / "hsis_raw_schema.csv"
+INPUT_FILE = PROJECT_ROOT / "data" / "raw_states" / "hsis_raw_schema.csv"
 OUTPUT_FILE = PROJECT_ROOT / "outputs" / "isolated_grey_zone.csv"
 
 def main():
