@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 import pandas as pd
 from sentence_transformers import SentenceTransformer
-
+from llm_normalizer import normalize_metadata
 
 MODEL_NAME = "all-MiniLM-L6-v2"
 
@@ -74,7 +74,27 @@ def load_state_schema(csv_path):
     )
 
     return state_df
+def load_state_schemas(input_dir):
+    """Load and combine all usable state metadata CSV files in a directory."""
+    input_dir = Path(input_dir)
 
+    if not input_dir.exists():
+        raise FileNotFoundError(f"Input directory not found: {input_dir}")
+
+    csv_files = sorted(input_dir.glob("*.csv"))
+
+    if not csv_files:
+        raise FileNotFoundError(
+            f"No CSV files found in input directory: {input_dir}"
+        )
+
+    state_frames = []
+
+    for csv_file in csv_files:
+        print(f"Loading state schema: {csv_file}")
+        state_frames.append(load_state_schema(csv_file))
+
+    return pd.concat(state_frames, ignore_index=True)
 
 def load_master_schema(csv_path):
     """Load the reconstructed HSIS master target schema."""
@@ -141,8 +161,38 @@ def assign_decision_zone(similarity_score):
         return "HITL_Review"
     return "State_Unique"
 
-def build_crosswalk_records(state_df, master_df):
+def build_crosswalk_records(state_df, master_df, use_llm=False):
     """Match every state field to its best master target field."""
+    normalized_records = state_df.apply(
+        lambda row: normalize_metadata(
+            state=row["state"],
+            variable_name=row["variable_name"],
+            description=row["description"],
+            field_type=row["field_type"],
+            use_llm=use_llm,
+        ),
+        axis=1,
+    )
+
+    state_df = state_df.copy()
+    state_df["normalized_metadata"] = [
+        result[0] for result in normalized_records
+    ]
+    state_df["normalization_source"] = [
+        result[1] for result in normalized_records
+    ]
+    state_df["normalization_cache_hit"] = [
+        result[2] for result in normalized_records
+    ]
+
+    state_df["embedding_text"] = state_df["normalized_metadata"].apply(
+        lambda item: (
+            f"Domain: {item.domain_category}. "
+            f"Standard concept: {item.standard_name}. "
+            f"Description: {item.description}. "
+            f"Unit or type: {item.unit_type}."
+        )
+    )
     print(f"Loading SBERT model: {MODEL_NAME}")
     model = SentenceTransformer(MODEL_NAME)
 
@@ -184,6 +234,12 @@ def build_crosswalk_records(state_df, master_df):
             "source_field": state_row["variable_name"],
             "source_description": state_row["description"],
             "source_field_type": state_row["field_type"],
+            "normalized_standard_name": state_row["normalized_metadata"].standard_name,
+            "normalized_domain_category": state_row["normalized_metadata"].domain_category,
+            "normalized_description": state_row["normalized_metadata"].description,
+            "normalized_unit_type": state_row["normalized_metadata"].unit_type,
+            "normalization_source": state_row["normalization_source"],
+            "normalization_cache_hit": state_row["normalization_cache_hit"],
             "master_field": master_row["master_field"],
             "master_description": master_row["master_description"],
             "master_field_type": master_row["master_field_type"],
@@ -207,9 +263,9 @@ def main():
     )
 
     parser.add_argument(
-        "--state_schema",
-        required=True,
-        help="Path to the combined state metadata CSV.",
+        "--input_dir",
+        default="data/raw_states",
+        help="Directory containing one or more state metadata CSV files.",
     )
 
     parser.add_argument(
@@ -228,25 +284,32 @@ def main():
         default="logs/hitl_audit_queue.json",
         help="Path for HITL review records in JSON format.",
     )
-
+    parser.add_argument(
+        "--offline",
+        action="store_true",
+        help="Use deterministic normalization without calling the OpenAI API.",
+    )
     args = parser.parse_args()
 
-    state_schema_path = Path(args.state_schema)
+    input_dir = Path(args.input_dir)
     master_schema_path = Path(args.master_schema)
     output_path = Path(args.output)
     audit_output_path = Path(args.audit_output)
 
-    if not state_schema_path.exists():
-        raise FileNotFoundError(f"State schema file not found: {state_schema_path}")
+    if not input_dir.exists():
+        raise FileNotFoundError(f"Input directory not found: {input_dir}")
 
     if not master_schema_path.exists():
         raise FileNotFoundError(f"Master schema file not found: {master_schema_path}")
 
-    state_df = load_state_schema(state_schema_path)
+    state_df = load_state_schemas(input_dir)
     master_df = load_master_schema(master_schema_path)
 
-    crosswalk_df = build_crosswalk_records(state_df, master_df)
-
+    crosswalk_df = build_crosswalk_records(
+    state_df,
+    master_df,
+    use_llm=not args.offline,
+)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     crosswalk_df = crosswalk_df.sort_values(
