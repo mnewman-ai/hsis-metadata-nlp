@@ -1,1 +1,65 @@
+# ----------------------------------------
+# Secrets and local environment variables
+# ----------------------------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------------------------
+# Python virtual environments
+# ----------------------------------------
+.venv/
+venv/
+env/
+
+# ----------------------------------------
+# Python-generated files
+# ----------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------------------
+# Testing and coverage artifacts
+# ----------------------------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ----------------------------------------
+# Jupyter files
+# ----------------------------------------
+.ipynb_checkpoints/
+
+# ----------------------------------------
+# Application-generated cache files
+# ----------------------------------------
+data/cache/
+.huggingface/
+.cache/
+
+# ----------------------------------------
+# Generated pipeline outputs
+# Keep the folders, but do not commit rerun outputs.
+# ----------------------------------------
 outputs/*.csv
+!outputs/.gitkeep
+
+logs/*.json
+!logs/.gitkeep
+
+# ----------------------------------------
+# Editor / IDE files
+# ----------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+
+# ----------------------------------------
+# Operating-system files
+# ----------------------------------------
+.DS_Store
+Thumbs.db
