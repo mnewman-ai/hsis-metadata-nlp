@@ -1,1 +1,2729 @@
-
+{
+  "024904db7035c7707425de9cce9bab09481f190d0f06a571eeb1b88c6920106d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for collection of rutting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_equip_type",
+      "unit_type": "Coded"
+    }
+  },
+  "034bf097e9fb626cf04a93c450362092c133996e5657fca630838881f70304d6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Case Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "caseno",
+      "unit_type": "Numeric"
+    }
+  },
+  "0427eb708ef4f685904be3f18507abca2b708c09864607ac62e9f1af83a7b475": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_condition_descr",
+      "unit_type": "Text"
+    }
+  },
+  "04d9b797fd731979703b6439aba8da5c84d30d4b9d76d72f33cf2ff70590c1f8": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Street",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "intersection",
+      "unit_type": "Text"
+    }
+  },
+  "04dd2a3ddec3bd90d2f718c9db40eb80db01ce5e508702c3f150e836b38bfd7e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable counter locations that were counted for a duration of 48 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_48",
+      "unit_type": "Numeric"
+    }
+  },
+  "04e9054c6a6a92361af3666042f0d6a8752940f7480f57310858fab4e263d4c5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Linear TMC",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmclinear",
+      "unit_type": "Text"
+    }
+  },
+  "05956915f89544ff9bcca4d099a12fa07d0e587f96e173b2b3e634870cf53e64": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date of Crash",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "date_val",
+      "unit_type": "Date"
+    }
+  },
+  "05e5f524faa382d00e248ade45e4b097caa8d7ed02733001274ae5a07ec02ae4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "routeid",
+      "unit_type": "Text"
+    }
+  },
+  "0812b66018663408851dd164d0e956b5403f87b94a324c3375bb2cb10a4f5244": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Single-Unit Truck & Bus annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_singl_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "088549f806d572e4ed980dae83eb1b3a7431bb7330ae19a22900d3fc765e0bca": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Calendar year for the data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "year_record",
+      "unit_type": "Numeric"
+    }
+  },
+  "08c47fd4567410dd5c7f48f8754fa08b0e00dada3ca28dfbdb74b02062de83d3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "mdotid",
+      "unit_type": "Text"
+    }
+  },
+  "0910c71f5c19d0e3de3b6fe0ae71ad75e0d47a9d5b850f0c22da018dff09eecf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Linear TMC",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmclinear",
+      "unit_type": "Text"
+    }
+  },
+  "098f9992f969a4ffd7b43c399b7424f00a632f5f8f22048b2d1d5c326bdea174": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date of Crash",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "date_val",
+      "unit_type": "Date"
+    }
+  },
+  "0b9e3268a55869561a3e6cf79f2fb1b1c4cf2a6fbf0129e47102934423559a4b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Quality assurance program exists for any traffic data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_qa",
+      "unit_type": "Coded"
+    }
+  },
+  "0bb72af4c1216c1ba1175887386e6ca087842f3388247e57b815e740f51c8e7f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cntyrte",
+      "unit_type": "Text"
+    }
+  },
+  "0c6209a5563ed15358cd94a1e5028b706dfe3d400b061678e3b2e56c94e06e37": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Common name or route number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "roadnumber",
+      "unit_type": "Text"
+    }
+  },
+  "0c7badb76d523debe5b7141fde6c9c77abcd13d117a4be81215b4361a248890a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Longitudinal distance between the outputs of a profile index (IRI) value. (Ref: AASHTO Designation: M328-14; 3.1.15)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_report_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "0d9d4e6f924cd5fc60a65a365bc5d40d68b01ce15802767ecba13cdcd2e0c065": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "primary_route_number",
+      "unit_type": "Text"
+    }
+  },
+  "0dcd0bebd58b07b4aae033135ef52422b12b9b951db2855aef9a329bc6502f59": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weighted Average Total annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "adt_total_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "110dbdda33ad9dde7e50c7cb089dc8c2e2dfb15fe0561bbfea71935ed866e652": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Day-of-Week Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_week",
+      "unit_type": "Numeric"
+    }
+  },
+  "1114bd98603997893c3367d264d22679139f23d58cf133023d6674d0d0ce7558": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent total section-level AADTs reported that are based on actual counts for the reported data year",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_pct_actual",
+      "unit_type": "Numeric"
+    }
+  },
+  "12882c629bc548eeb04010a1941c966fd52913ea370190b65a6c937eeac6e65f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "County",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "county",
+      "unit_type": "Text"
+    }
+  },
+  "1489b4acad0131f7ed03ef1302570c494ee3d955e6f98269d0bf280b7e66a17c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Numerical road order of TMC code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "road_order",
+      "unit_type": "Numeric"
+    }
+  },
+  "14ca30f9c3c8fe89de7726797750bb4d083314d06bbcc958c4c418b7cad301a5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ramp Termini",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "ramp_termini_desc",
+      "unit_type": "Coded"
+    }
+  },
+  "153373543baeffd2abdb317835a50ab81df4ead3307403fa6d8d2aa01665ec75": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Roadway Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "sp_lim",
+      "unit_type": "Numeric"
+    }
+  },
+  "19cc6babe2c105775c8c66859522bcee51ea1f00b4b392b15786fee6994318b9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Timezone name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "timezone_name",
+      "unit_type": "Text"
+    }
+  },
+  "1a1c33be6193dd612937f41ead2c25ff9ca9f7f667d6ed757131a5ea3d84acad": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent total section-level AADTs reported that are based on actual counts for the reported data year",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_pct_actual",
+      "unit_type": "Numeric"
+    }
+  },
+  "1a274e908b907a474e728da788b7b14f356f6fc88335c7af294a0bcee3baf225": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Average Annual Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "1b964374fa167bdbf184fe9c26583ffd4582517e89062efdce62466a6ad946c4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "1ba6dbb31ed3d6ef21b33eb7850e84d12f9aef483406ee44c4c7417909ba69b6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "no_lanes",
+      "unit_type": "Numeric"
+    }
+  },
+  "1c2d030e3449579adb29d91a6bf339bf154de24f7b428fd256ad8da313d136ed": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Primary Light Ambient Status",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_cond_primary_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "1c4283afe763232cbadd3bfab533c19726f37c2359586ef4ec0f408a6bf23b04": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity Scale (KABCO)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "severity",
+      "unit_type": "Text"
+    }
+  },
+  "1c93b3df09883b3c0ce00c6c81253402ae1a069ab27fbacc613b43f1797058c5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "accident_date",
+      "unit_type": "Date"
+    }
+  },
+  "1d552f515d6c1e2a80533b608daec3fc1fba2d6d2f0fbb1ca557567dcfcfc526": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Transverse profile data point separation distance. (Ref: AASHTO Designation PP70-14 (2016); 5.1)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutt_trans_prof_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "1d6bcb571c11f1fe76b8482e9b76f5dbd6b26854ba263701df067211a1e8507f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the International Roughness Index (IRI)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_equip_type",
+      "unit_type": "Coded"
+    }
+  },
+  "1d7df8d95547efd7238281b5659a4727d6fbff3ff77d0d0b74fbda50fbcc5a85": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of classification counts used for reporting purposes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_class_type",
+      "unit_type": "Coded"
+    }
+  },
+  "1e8811abe1ceec9f5b0bf3255403b2c0ac148ce1eea2a6f19811dabc4ec540ae": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "State FIPS code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "state_code",
+      "unit_type": "Numeric"
+    }
+  },
+  "1ea19bd874c0dd4b0ed7b09060d00fb4fdefb1343306d6de9ee919dccaa43113": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "End Log Point of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "end_milepost",
+      "unit_type": "Numeric"
+    }
+  },
+  "1f632793da9557b6e993a1ea366828ef74fe70946408c7cdc1c270f82dccd247": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Postal Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "zip",
+      "unit_type": "Numeric"
+    }
+  },
+  "1f89c5d933c9fe997e44ccd5f452a68a90a2c31d14fb25b87ceab286c48647ba": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_date",
+      "unit_type": "Date"
+    }
+  },
+  "1f9ba941162240f93612fca288caf8bc1f2025fbf2758974780b63bc3ded1eb7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Longitudinal distance between data capture points. These data points are combined to create one profile data point. These points, in turn, may be combined to create a final value in the reported profile. (Ref: AASHTO Designation M328-14; 3.1.18)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_sample_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "1fd62d425c026665a66d8fc21acb689322ced272c14941383fda333c181cd5be": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of class AADTs (i.e., Single-unit Truck & Bus, and Combination Truck annual average daily traffic) reported that are based on actual counts for the reported data year",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_pct_actual",
+      "unit_type": "Numeric"
+    }
+  },
+  "2032fb7de41df1ec64c20b200f7b1a08428a8bfc18e6607a62ec571222565fbe": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Category Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_cond_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "21c075939106b1645c275f695bd46090ebb1748f89892a9e8c37e163ca97e793": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_limit",
+      "unit_type": "Numeric"
+    }
+  },
+  "2224e568e398b671c89f5abf620aadadb44f84486d31c72ac4b5da536eb9e790": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Point Location Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "type",
+      "unit_type": "Text"
+    }
+  },
+  "245dae8a6bf59acdc68ec5fe4b4131bdf9cb0caf8631609717ae20ec73490128": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "primary_route_number",
+      "unit_type": "Text"
+    }
+  },
+  "24d0113b118018d8b2d0695e95a717b0b2822c0ea78220cac8da483ca0f3e263": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition 1",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather1",
+      "unit_type": "Coded"
+    }
+  },
+  "24d6e0f073c5b3e1f2e77281c22569c4c92f8190681572479a9445d939d9bf21": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Width of a travel lane in feet",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lane_width",
+      "unit_type": "numeric"
+    }
+  },
+  "2510949d96a4d91fa24aabc4b073ac1289c08ba39b9a39cbdec742f31e26bda9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Source of Travel Data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_source",
+      "unit_type": "Coded"
+    }
+  },
+  "2698d7a69c88a3931062226e98a04f99afa8147c38a15df3e12b42daa7ed81d4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "injury_severity",
+      "unit_type": "Coded"
+    }
+  },
+  "26a00f2e468e69310be2bd9026baf381ecbf58d8835b972c29a5af9907f4eefd": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "26b303553a1934460722ca10beebbee9753d6614d344d0caa7d4317f9f615462": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weathercode",
+      "unit_type": "Coded"
+    }
+  },
+  "26d14a05d4c2f800e41644ddb946fdd476b4d36304fc57b44e4bc980e87b7afc": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crsh_levl",
+      "unit_type": "Coded"
+    }
+  },
+  "272afb4bfa71a4ae0e5953e87632e557c0d492e52c1034022f2a33c33ed39a0f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "route_id",
+      "unit_type": "Text"
+    }
+  },
+  "2930021375c9a9e97da89362e58adb62f83c8d955feb770d45a4bb06879e0e06": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit of Road",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "29b14728121533b2f962d9d5a103504815b352c5e3b2cdfdb8afd52e70436b28": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Weekly Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_week",
+      "unit_type": "Coded"
+    }
+  },
+  "2a366415bf2e0443207252052ca39b59731ee53e210d80aecffcd9357c804ac1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Reporting method for pavement distresses and related data items (e.g., IRI, PSR, Surface Type, etc.) associated with divided Interstate roadway sections",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "pave_rep_method",
+      "unit_type": "Coded"
+    }
+  },
+  "2ab09c9d32ce6cb65ed674de02febb42865e257dd12f694dd829cab74caf6718": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "County",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "county",
+      "unit_type": "Text"
+    }
+  },
+  "2ad68279d67917b97474c1cabde357034932d4bd2b6c94d32bf5980d63ef45a6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Path Identifier",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmc",
+      "unit_type": "Numeric"
+    }
+  },
+  "2b26153b63317ffb86f6729dfe93532affa13c35fa2ea530b0120d285712cd4e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Inventory Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "inventory",
+      "unit_type": "Text"
+    }
+  },
+  "2bbc036342fa34f3ce8fb2a600cb9eccdfd059a8cf3a005322fdfb8eb25bf8bf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date and Time of Crash",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_date",
+      "unit_type": "Date"
+    }
+  },
+  "2ca02f0dd04a3bb2e6630e9359082d14bec7d8e5e432204e29adb1a9d101a736": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Categorized Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_severity_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "2ccb8be4322b055380f605f761d5d839deddb0d32cc19ee543ae824d5757d071": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Whole Street Name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "wholestnam",
+      "unit_type": "Text"
+    }
+  },
+  "2d8f05cffd1afc0feca7f49d293fdad3b808f3b7e40b2f222480cce707234a97": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_condition_descr",
+      "unit_type": "Text"
+    }
+  },
+  "2d9828514d2641c3c15cb88420e44eb0e8454ed3bcabe137541f627fd1426cf5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Milepost of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "to_measure",
+      "unit_type": "Numeric"
+    }
+  },
+  "2f0b836ae62aa0f5b36b300fac033cb3b4b0fa9782ea93add3134639125c0cf3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lightconditioncode",
+      "unit_type": "Coded"
+    }
+  },
+  "2fff038ee3d442e2917ebd81e421092e4633b88e3c7681cbffddf654615645bb": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date Accident Occurred",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashdate",
+      "unit_type": "Date"
+    }
+  },
+  "306cfd1aa3168fc532174a5be89a9483e0b4128b076bb6d1f212ad0659d9beda": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Primary Light Ambient Status",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_cond_primary_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "306fdf000011fe96960965e201ccce7886f78fadfdde477ddf3ab5ea8c0c59ec": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Driving Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lanes_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "3284481839fd80cec8e5d08578e73344b9d91cc2a2b38962003537de127f076a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Growth Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_growth",
+      "unit_type": "Coded"
+    }
+  },
+  "32a4767de24e70375a16308aa0556bd4f773d221eb705a90f6fc910ad5b888e3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Weekly Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_week",
+      "unit_type": "Coded"
+    }
+  },
+  "32cdd93ee63ca5909cf7c12ce5197bf7fd5e2fb682d7cb40e5014f1221cc374d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Axle Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_axle",
+      "unit_type": "Numeric"
+    }
+  },
+  "32e6c65a6933f618c7bd310631611fa5aada92569b87be302323ff34a2d13286": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "The number of permanent and portable classification count locations that were counted for a duration of 48 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_48",
+      "unit_type": "Numeric"
+    }
+  },
+  "332384ceba88f5ff91ddef702d30a24213fb1501dc6b8ee2158b28437f9b7523": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "3503acfef470ea48df6bbc0afbede131c7ec9280ea8006ccb3d6637f5b40499e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Access Control Level",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "access_control",
+      "unit_type": "Text"
+    }
+  },
+  "360bd72f5bb1456522057e9675870ceed451f929af21debe807ff2ea1b22b669": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weathercode",
+      "unit_type": "Coded"
+    }
+  },
+  "3728b44ceb54eaa0c10346c47c880942f953ee38be54d7fb439541c612730fb1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type",
+      "unit_type": "Text"
+    }
+  },
+  "38141234ee0cc92c01c1e832c5defe23ddbb9b7fafb40244767aea94b7cab420": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable classification count locations that were counted for a duration of 24 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_24",
+      "unit_type": "Numeric"
+    }
+  },
+  "381ce83f965132dd560d5f4025dbddd8569f19610620d7aecd8d932a243cec5b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Functional System",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "f_system",
+      "unit_type": "Numeric"
+    }
+  },
+  "39eba3cc7f037c87cd852414f41f9adb750da48757a752519710e41e2eef034a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cntyrte",
+      "unit_type": "Text"
+    }
+  },
+  "3a219a102668c6dbb1865f359909fdcad3e7ecd7e82301d0c8857c19c4fbfb66": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route Identifier (Primary Key)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "nlfid",
+      "unit_type": "Text"
+    }
+  },
+  "3a2d9aa92855c8daa981628307678aac3f9daaa57c06257654242b586b96a28a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "3a56488580355cb7f32468197c343fc040267d106d6cee73c249677a9347c45a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_condition_descr",
+      "unit_type": "Text"
+    }
+  },
+  "3bb4034a9f2ffec2bdfa5631dfa222e5427aa66b1aa01626f046a4c32fa52328": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Border Set",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "border_set",
+      "unit_type": "Numeric"
+    }
+  },
+  "3bdfaa96e207ff55c454e67d2f963f368ddf39c458f3363365625608840a3907": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "injury_severity",
+      "unit_type": "Coded"
+    }
+  },
+  "3c6ec9967261588b824bcb7f4698866694b0715cce58e0e9cb9327b5dbaab0b9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of sensors for the equipment used predominately for collection of rutting data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_num_sensors",
+      "unit_type": "Coded"
+    }
+  },
+  "3d3b68e55500f570c1f1aa4b10dac9c74a47ab969a9a9e555ad33c6a9d85ce13": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "State",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "state",
+      "unit_type": "Text"
+    }
+  },
+  "3d4acde61d962d7e4bbd957128ac9762b8484e0b5fa647060879ee803b7c0395": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Start Log Point of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "begin_milepost",
+      "unit_type": "Numeric"
+    }
+  },
+  "3f28a101c9d3d96941df98e5b5c47f6445afc3dce018768c6db11afb8c0ceb12": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Growth Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_growth",
+      "unit_type": "Numeric"
+    }
+  },
+  "3f5f381599f659ae828f9d802e03491444831a164138225b4cf2fa85270ec5a5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Metadata Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "metadata_type",
+      "unit_type": "Text"
+    }
+  },
+  "401ba6b3efc4381b3eb8080da7359b64111c54d5e8f0908985f10c63745d630a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "total_lanes",
+      "unit_type": "Numeric"
+    }
+  },
+  "402a017d1f0135a7c33ee87c08c001f79acb949e366896110981d2a8f96eeaa5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light",
+      "unit_type": "Text"
+    }
+  },
+  "413d79490ba032da02f96d829ec2d2f8d012d6ea623f339ce98db5ea646e8cda": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_limit",
+      "unit_type": "Coded"
+    }
+  },
+  "4155b8ca82c9769c2ee71a5becfc8a2695bb5d694f5f426057ce12dfe96796a3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Seasonal Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_season",
+      "unit_type": "Numeric"
+    }
+  },
+  "41b2d45031dbeb688a632c42297dd087f2ddf42418eb795bf7def6a4dd921c04": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Latitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "endlat",
+      "unit_type": "Numeric"
+    }
+  },
+  "4221692865b60424da39b1adbb548e0975c2b091ccd6cc38d404d014594fe54f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Classification Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "4396d387503ea72040c1d997055630301f6bc65640e9c56226de8cceb4c9ad36": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Functional System",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "f_system",
+      "unit_type": "Numeric"
+    }
+  },
+  "449d2afccc806bd5bf8ca64204b554feedb412c17b1520a41b567413b8de44a1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Design Speed",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "design_speed",
+      "unit_type": "Numeric"
+    }
+  },
+  "44f14a5cc48dbb30780b9087c1e28b97ec0a24ba4f7439854fc0ebc85608522f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Growth Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_growth",
+      "unit_type": "Coded"
+    }
+  },
+  "450ed80ccce2f6954ee4514d093fe56b188338ce9e5cdbc88b26aadbc88a2dec": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "mdotid",
+      "unit_type": "Text"
+    }
+  },
+  "4b0af660dcc2b7b6efa5cbab3dae762408a5ae695448b419a20c613bfb775860": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Whole Street Name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "wholestnam",
+      "unit_type": "Text"
+    }
+  },
+  "4ba5d291f9bfb4253b45938ed06bf09340c4a8f458ad1ed565d392f81c4ab07b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Country",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "country",
+      "unit_type": "Text"
+    }
+  },
+  "4ca8609ea815b1bb85e51499ed14511a4094a95234f83c8eb0d6a38052f8059f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "For manual rutting method: sampling interval. (Ref: AASHTO Designation R48-10(2013); 7.1.6) or For automatic rutting method: report interval-the travel distance between the reported data. (Ref: AASHTO Designation PP70-14 (2016); 4.2)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "4cce1384decd6a4abb6598c7deadf4af746ef2ebf2fa17e9fb82e9729e7498f6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Combination Truck annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_combi_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "4d296094aacb72529993e4769fee6e18ce6b3f88ce6f33ffda09b63a6c9aebeb": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Roadway Surface Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rdsurf",
+      "unit_type": "Text"
+    }
+  },
+  "4d3727eebd687e1c9fbab4cb05973276a9924330292de0655a4aa810846c01b4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Road Name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "roadname",
+      "unit_type": "Text"
+    }
+  },
+  "4df80dbda3126ddc8ca99c5b9cd3b871057f1d0c76618f5064cbb35644263664": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Source of Travel Data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_source",
+      "unit_type": "Coded"
+    }
+  },
+  "4e474275218b66117f2e0de5899cd17847157e4c63c1a9cf87d3d4e5f9adf321": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lns",
+      "unit_type": "Numeric"
+    }
+  },
+  "4e5a3b3d7623fb5b8c2ce43856462a30c098b5968b0781e88c795b4ef0dff3f9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of class AADTs (i.e., Single-unit Truck & Bus, and Combination Truck annual average daily traffic) reported that are based on actual counts for the reported data year",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_pct_actual",
+      "unit_type": "Numeric"
+    }
+  },
+  "4ebe4720e592abf4e4e43c0bf295a8a8959a31b77d15692ed5cf073c95f5d440": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crsh_levl",
+      "unit_type": "Coded"
+    }
+  },
+  "4ecbae58b6cfd955d27cd286f65a7c73c1f86cda8a571ef3fceb435a9c73e13a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Street",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "intersection",
+      "unit_type": "Text"
+    }
+  },
+  "4f4a7983738a7fdd51d1b394cf3e538f796383d17789785a72395f58e2831f23": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Average Annual Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "total_aadt",
+      "unit_type": "Numeric"
+    }
+  },
+  "523b31b9b7af67ccf657eb372eb814c60f80ec510fd3b587a63999505bdce87c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Longitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "startlong",
+      "unit_type": "Numeric"
+    }
+  },
+  "5261ae8b88f5d76ed3b1a8279185e5ac2ff7290e753cfc604518a1f34118b20d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "route_id",
+      "unit_type": "Text"
+    }
+  },
+  "5342b137b1eaedf98e0d9f6695ee47c6a380d72acb847b0bfec4cce617fa47c1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Identification Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "document_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "5490a5abbded34d220b00fb7d50229b59a3c063265573bd0ff60735a0128813c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit of Road",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "581cf87f60bc6c3819af1ef562504ecbb34b33e006d0dcc67aa415f86be99f09": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Conditions 1",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_code",
+      "unit_type": "Coded"
+    }
+  },
+  "586f369b98abadb98ccb8fec9b3e5c4cc3840f5375d2f395e4af744973dd97ae": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Milepost of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "from_measure",
+      "unit_type": "Numeric"
+    }
+  },
+  "5886ca8733e00f20276ac15ccb7c07d4f14ff5615465b009087194f6c025e589": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "5952b03097aab882417b065dbd5a4241e05c9b2cbcf8cefabfbab285fcc21472": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "severity",
+      "unit_type": "Coded"
+    }
+  },
+  "59868c76dc81a3d1ae30d42af346e98c4efee2f1ee85ec9f4b6d96fe2d71f3c2": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Design Speed",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "design_speed",
+      "unit_type": "Numeric"
+    }
+  },
+  "59ffd89c1f40a02424440aa1029fcf239db1264415c4130027aba469daca995b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Collision Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashseverity",
+      "unit_type": "Text"
+    }
+  },
+  "5a196f4fed6f37910ada70cb7c47b691513b153dee2e20ed5459a391a4316b5d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weighted Average Total annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "adt_total_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "5a45c6f2b3c59982b8d3cf8d878dec4b58156a23fcbd8c1c3eddc8bb16f2821e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "On State/Off State System",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "is_state_owned",
+      "unit_type": "Text"
+    }
+  },
+  "5df5273276afa2014e6344ca2133d50a3f1ed358620ab104fcbb89bc5e713934": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Border Set",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "border_set",
+      "unit_type": "Numeric"
+    }
+  },
+  "5f290b57a4ad6a2eb76c1cda0ca32250bd3a9cf633a617216a674e825954bac4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Federal Functional Classification",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "functional_class",
+      "unit_type": "Text"
+    }
+  },
+  "602db22ad5041dccb94edf00f70a9301b557d5d93214ff1277981cc2d6e9ebfd": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ramp Termini",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "ramp_termini_desc",
+      "unit_type": "Coded"
+    }
+  },
+  "603c222cc75adcaa74f07fa0bc9b3c15aa37a91ca5565e95e1f1ac3ef32e04cb": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Protocol used to identify pavement distresses",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cracking_method",
+      "unit_type": "Coded"
+    }
+  },
+  "61914350537b4adb2eb811cfba85517d2409edb591d2512f433da9f27f050c20": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Direction",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "direction",
+      "unit_type": "Text"
+    }
+  },
+  "636c3869447d492510a0c1e341076257e0c2a34aeb61841b4242db5c0801af57": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Driving Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lanes_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "64b2b40566727192735d1ecff54b834945e85d3c7ebce927a6403e08cf5a6819": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Start Log Point of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "begin_milepost",
+      "unit_type": "Numeric"
+    }
+  },
+  "657a42f94e6ba08b5664fba417626560b202dc6497ae59fcc47b2129f0103912": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of TMC Path on NHS",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "nhs_pct",
+      "unit_type": "Numeric"
+    }
+  },
+  "67296ebe7de24570359c67b89baa7808b56bb13044e77c999ab5433e770b5934": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Transverse profile data point separation distance. (Ref: AASHTO Designation PP70-14 (2016); 5.1)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutt_trans_prof_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "674f63d1bb76c8ca0b46c0c12ef6814856974dfde9eb51a077a7586259b1c1da": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Postal Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "zip",
+      "unit_type": "Numeric"
+    }
+  },
+  "67a5301b8f641d9cea617ba13ad375ad0e2c4ca27ccd1b7b5566398df268df76": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity Scale (KABCO)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "severity",
+      "unit_type": "Text"
+    }
+  },
+  "690ceafba53e59f6e214be8708e1e762d7ce588cbe2d36cf063a7e27aa65e16a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Direction",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "direction",
+      "unit_type": "Text"
+    }
+  },
+  "69918f45181468316264376fd4d35766fbd30938eecb5ffd8cffc2f238f26555": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "State FIPS code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "state_code",
+      "unit_type": "Numeric"
+    }
+  },
+  "6a560aef47b2d8a442189c2de4389dafaa26584a6764fb31d98300f8032794fb": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Rural or Urban",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "is_urban",
+      "unit_type": "Text"
+    }
+  },
+  "6b9fe124be7f535f2fd9329e90a7d3f367beed018f0fa3762d4855ac084264a9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_severity_code",
+      "unit_type": "Coded"
+    }
+  },
+  "6d4cc3a701df4f83f743f824db4e87c518b8015d1beb9b143b09911669e01363": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lns",
+      "unit_type": "Numeric"
+    }
+  },
+  "6d8503bee1140c455cefbc12bdc976162b04bd93c93f224e766e86c372b5599b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Day-of-Week Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_week",
+      "unit_type": "Numeric"
+    }
+  },
+  "6e8a964f05490117618035c035283923ed06e00d91c49a5fa0525fd5d8e385a7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Day of Week",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weekday",
+      "unit_type": "Coded"
+    }
+  },
+  "6eded37f1a689bd302169aacc5f8299fb0d9f78dfa9dedcbd73867188e6f7389": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Conditions 1",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_code",
+      "unit_type": "Coded"
+    }
+  },
+  "6f21635816b2910a9aef0ac62322879a2bd2243fb0e6e8cd1d6e0a6652610c1c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Longitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "endlong",
+      "unit_type": "Numeric"
+    }
+  },
+  "6f88df4959996ba58ea7355046d5fef23551e0796bda972139ac189fa49685e7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Sampling interval. (Ref: AASHTO Designation R36-13; 5.2.5)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "70fb30af9e6fbe4f4d40ada91ccc7785383907e1199014340fb6f51d6b078f60": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Road Surface State",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "road_cond_primary_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "721ad035037c2b9bb8315b5341264cd9b7398bfe0241439a778e37a2bd377dbc": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date and Time Crash Occurred",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "date_time_of_incident",
+      "unit_type": "Date"
+    }
+  },
+  "73d0ee0930c9099a5f2fca669ff40cd317e8a724653b37f05e6bd1e10343d7b0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Categorized Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_severity_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "73e46ae1cf42a72aefb8b07804140fe47784a7431bad07ba60723272afeb7343": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Route Identifier",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "route_id",
+      "unit_type": "Text"
+    }
+  },
+  "748f60999d9d40ed32388986c6539592716709f63261d7a95f8aa54aa7ed702a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Average Annual Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "75530b8d06bcd1b05cce40dbf8744eaa440a6272cb6ef8c9890f296607ff88a0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the percent of cracking (Cracking_Percent).",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cracking_pct_equip",
+      "unit_type": "Coded"
+    }
+  },
+  "7a79560efd7df0e837af4baca96ea10b6f101eff8452267427dd4030b436816e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "7b0b0928ab44240c9dcafdb7664c0de140123b1ce5afe4b90dbcd753eeb9d5c5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather",
+      "unit_type": "Text"
+    }
+  },
+  "7c1c2d1d526b6d33bce391a7733783248feca9f5872d9fa1ef39d58e214ea73e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "no_lanes",
+      "unit_type": "Numeric"
+    }
+  },
+  "7c20eebefee5c8cbe4318f15c816cfe95bdc7b15b3089613292642591f38f1d0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type",
+      "unit_type": "Text"
+    }
+  },
+  "7d12ebc4317de31196b5e2068b7d785f079dcd1b4855a106e2c9ae0742d49bb5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "7dead9a293a9169ec65c3ffec045bf6043f130e7e184691367440728218653d4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Conditions",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_condition_code",
+      "unit_type": "Coded"
+    }
+  },
+  "7f308de6b113e49355d898e871a6872ec0303a0180d2c7cf0c2c2f46758ce414": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Longitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "endlong",
+      "unit_type": "Numeric"
+    }
+  },
+  "803677014fac5d951672906927c685e1d3998fe9491d7a68d531a2c55751a1a7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "8037ae0f7b5096c03db5a8dd1902d696a6df298843dee60e778a610a3c32456e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Divided Indicator",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "divided_indicator",
+      "unit_type": "Coded"
+    }
+  },
+  "80b89b8ea059520336a75617ff0222df34d63a3dfa0c0604923c626ff0fc452b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lit",
+      "unit_type": "Text"
+    }
+  },
+  "81294fcc96bbd27bde4409362d5bb63aad53baedf04437eea2ba68bccac01e60": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Time (24-Hour Clock)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "time",
+      "unit_type": "Numeric"
+    }
+  },
+  "81607e0a8c4d8f5c09c4fb1dc264589c5c17fbfac7ffc0d49410d31e740289be": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition 1",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather1",
+      "unit_type": "Coded"
+    }
+  },
+  "8170631e012ebdd005f8e4a8fed1101094a7436afce589aaf781d182ff5775cf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Average Annual Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "total_aadt",
+      "unit_type": "Numeric"
+    }
+  },
+  "81a4ad2e393bf7f80c8bc010f318fcb83903d57a0653f1692d3b635ac1ee3e37": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Protocol used to identify pavement distresses",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cracking_method",
+      "unit_type": "Coded"
+    }
+  },
+  "81daf658737cebb872ab161a47e5b73be9352474029ce2afb97ba06e32ed08a8": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Code Start Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "active_start_date",
+      "unit_type": "Date"
+    }
+  },
+  "81fe0a64e4ec888cd3cf6e897e984b3041843a3f3dd4e099a581f38cd7a6b615": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Width of Median (Feet)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_width_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "821c35392fb62a836db0ff7dd49fc865e92a6d8e40ab6995e97e6b18abb8edd4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date and Time of Crash",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_date",
+      "unit_type": "Date"
+    }
+  },
+  "82441f5425daad04c9967e7c6d750868283f8ea804714b81c110510448d25fbd": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable counter locations that were counted for a duration of 48 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_48",
+      "unit_type": "Numeric"
+    }
+  },
+  "824a1309daf50ad431949d5d1661e99fcc218e84bb15220f171d6367ac6b5aa8": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Incident ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "incident_id",
+      "unit_type": "Numeric"
+    }
+  },
+  "824fe2cd716013bf3767c261a079a7eedcad0d4198fb53018d76b4e81e5719da": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes - Total",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thrulanecount",
+      "unit_type": "Numeric"
+    }
+  },
+  "848ca2c9f9aa091ad61f7d6136e0823e1a8804824d69f9733ac8af93630603ce": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date of Incident",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "acc_date",
+      "unit_type": "Date"
+    }
+  },
+  "84de11558a00a21c4c51fb4b8e5ac869ddb587296c0bfd0a32beecb808f69f87": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Latitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "startlat",
+      "unit_type": "Numeric"
+    }
+  },
+  "855567687bff321b3831a8dc140788311a7fd88404ee2653980e045790255a15": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the International Roughness Index (IRI)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_equip_type",
+      "unit_type": "Coded"
+    }
+  },
+  "87d5b8e001aa0884d5017360ac76273c5346f9f4b9a2e85e061f7913d903ae49": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Path Identifier",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmc",
+      "unit_type": "Numeric"
+    }
+  },
+  "88f8896cd6113c04bea0b34c9a055c6059080bf5545e6bd17b358cd656bbf1b0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Method (Manual or Automated) used to collect most of the rutting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_method",
+      "unit_type": "Coded"
+    }
+  },
+  "896ec658a08dbc40ef4a47c43b7746c136a9d4b66e77d9e4d7e4e50e17b357e5": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Posted Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "speed_limit",
+      "unit_type": "Numeric"
+    }
+  },
+  "8b1ec590b829b2f861db0954103fff49f20b2fe86498f8b34179e829b17af2e1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lightconditioncode",
+      "unit_type": "Coded"
+    }
+  },
+  "8b2e66104226b21dccd89cef425134e4308a3cd4b1e33f9b82a51bacc5d0a919": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Day of Week",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weekday",
+      "unit_type": "Coded"
+    }
+  },
+  "8bb139c89fae9297b9b98f07c3830ac0d302267aa54111d398f4a0bed9514672": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Total Width of Median (Feet)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_width_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "8be3bb8bc8f297d79c273821cd7d759014eff8bf32682835226dad5e372889c6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light",
+      "unit_type": "Text"
+    }
+  },
+  "8c7236880e3eeef96ca8113d70b0745e12ff37ee0033d6bcc0f19e5b47158a18": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Numeric Value",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "value_numeric",
+      "unit_type": "Numeric"
+    }
+  },
+  "8cc308771b95d24e962a6ebf05727cb1e60e5f74edc96c5d1381e69d7d29f998": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_condition_descr",
+      "unit_type": "Text"
+    }
+  },
+  "8d159e0c00d0015c2946dfc22120c2b5ed5e92291534eff7919ccb819b98e7fc": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "On State/Off State System",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "is_state_owned",
+      "unit_type": "Text"
+    }
+  },
+  "8d8df58dba5d4adb5aa7575aac07b45f5c4bee1c61ab4776ddea1399f2169fb0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Case Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "caseno",
+      "unit_type": "Numeric"
+    }
+  },
+  "8e2c4ec1873368ac440cf693d92e11f4fc91d9cd5ec592cd28b0d908dc01522e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Access Control Level",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "access_control",
+      "unit_type": "Text"
+    }
+  },
+  "8e2f131467c0aec4b874f9fa9f98c769bf5ed0256b5dffe19a4f4f8a0ced1717": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Route Identifier",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "route_id",
+      "unit_type": "Text"
+    }
+  },
+  "8ee2173e6b12de749db058b4fc5cc7658ad8a155617029ff16cd312e5b9d40f7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the faulting data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_equipment_type",
+      "unit_type": "Coded"
+    }
+  },
+  "8f84eeeb6092cf12a005aaa331608fc5b5ee27ec26132da42a9e66881a30b6ab": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ramp Traffic Estimation Method",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "ramp_traf_est_method",
+      "unit_type": "Coded"
+    }
+  },
+  "918a0bbc8ec5de9092c36ef80357b9c54b512a829aeef2ac6fb5f7b68e76828a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Sampling interval. (Ref: AASHTO Designation R36-13; 5.2.5)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "920d3ec7bb9f20bcdfcb1fd01151e2099118c197659044ad7e586205dff11173": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Length of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "miles",
+      "unit_type": "Numeric"
+    }
+  },
+  "922c89a3101b46653fdf2f3feaf8fe7fee4c0d5f2287f4a5719078ebf5db6e80": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the faulting data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_equipment_type",
+      "unit_type": "Coded"
+    }
+  },
+  "93792ca29a70d1694523181875e6c66ff04a76d78b85968a43b758b1c165ba61": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "lit",
+      "unit_type": "Text"
+    }
+  },
+  "93878126d16eb20467241752352a1672a1109f6c3fd92aa622bbe69ae41e8c79": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of TMC Path on STRAHNET",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "strhnt_pct",
+      "unit_type": "Numeric"
+    }
+  },
+  "960fe5551afe1d64d48be908626876b7942cdb38667dbf3954442409eee760d4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Latitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "startlat",
+      "unit_type": "Numeric"
+    }
+  },
+  "96636174a29169de22fb545293f9857f50d58bac7903846e14c03c3854bccae3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "total_lanes",
+      "unit_type": "Numeric"
+    }
+  },
+  "96daf6a6981c82825c015fcd593bec36b747b8265936845c5eebad315ec75e97": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Through Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thru_lane_count",
+      "unit_type": "Numeric"
+    }
+  },
+  "96ee1c998ad2ad2d23a8d0d949c4ad214bad13dce897b40acc85db6d15b87016": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Incident ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "incident_id",
+      "unit_type": "Numeric"
+    }
+  },
+  "974b53600d49c8798b74b2d4f1b065e06a75559589a88da76cbc6e9388141092": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Growth Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_growth",
+      "unit_type": "Numeric"
+    }
+  },
+  "97fb64a530c8b2148e073de7da7a89b917b6324a8f37d7fb1a2989452aa09a7c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashid",
+      "unit_type": "Numeric"
+    }
+  },
+  "991ed51e0cd9822effa292163efe0441013b303b3425a3aae1872062ca4c9f5b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Denotation of overlapping segments",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "isprimary",
+      "unit_type": "Numeric"
+    }
+  },
+  "99b290dd9a8f57706e2460b276d5b93dbadda4915a2d5d8d0274224fc4f6595a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Latitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "endlat",
+      "unit_type": "Numeric"
+    }
+  },
+  "99b83c8537035b9d5f108c1213c21e5b8154d73ebefe94c45bf9523577e07756": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Calendar year for the data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "year_record",
+      "unit_type": "Numeric"
+    }
+  },
+  "9a55e6943c37322be412fa6413edc5e51bb9dc128d3270cafd71ed18cad0ed81": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Length of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "miles",
+      "unit_type": "Numeric"
+    }
+  },
+  "9c92831485fd5dd9ec41d644ebb5e21f21d1019436e9e95cd18f6d9aa6e537e9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Longitudinal distance between data capture points. These data points are combined to create one profile data point. These points, in turn, may be combined to create a final value in the reported profile. (Ref: AASHTO Designation M328-14; 3.1.18)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_sample_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "9da72c7800c6ac25ae7105b97daa6796c8805363ffd874cbf0c5a6161de85cfa": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Milepost of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "from_measure",
+      "unit_type": "Numeric"
+    }
+  },
+  "9e070d0a46ee6a6c131fe5fb480cc44243d0bf8b98fe9475fb5d4dba9674a7b3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Metadata Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "metadata_type",
+      "unit_type": "Text"
+    }
+  },
+  "a02350bd06c41fcbfe928e0febb766c96d7ce214131082bb316f2f4d64d36718": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Thru Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thrulanes_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "a041094bb8afe059deba4bd814ef77f2eab4a27a4a23775fc2af9a28e1a81e8d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "City Location",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "city_name",
+      "unit_type": "Text"
+    }
+  },
+  "a117ba7501c2c999cb31cf4dcd49b04e2166d11b50cbc459d84c3e77e0598559": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Crash Case Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "caseno",
+      "unit_type": "Numeric"
+    }
+  },
+  "a130aa4143d8e9bc9af0ca1c78246a40adf6f782ed6e5e0711e31e43da5ab520": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Inventory Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "inventory",
+      "unit_type": "Text"
+    }
+  },
+  "a1709eee00e8f86033f9b1246a1c2725209a99b8a163d44c2c81670d1903dccd": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Conditions",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light_condition_code",
+      "unit_type": "Coded"
+    }
+  },
+  "a1732acb31dbf6a84f08ffd4c14e6de9630610cdf50081f6c1b42e61a824091e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_severity_code",
+      "unit_type": "Coded"
+    }
+  },
+  "a1782468e32f35c78ee68f5b3f25d51aa3521290f0dc50b91e157ece23994f41": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Seasonal Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_season",
+      "unit_type": "Coded"
+    }
+  },
+  "a23fe5244d021079d9509538718b46f9e7c7212f764052dde1b52cfdf206fe22": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable classification count locations that were counted for a duration of 24 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_24",
+      "unit_type": "Numeric"
+    }
+  },
+  "a37fcdae65710d6672fae99298f689e6672ea3c359ea59b25901221583891ac6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Axle Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_axle",
+      "unit_type": "Numeric"
+    }
+  },
+  "a3a9f7b9bf9f476929d3efd2c5eac5a1ad2851e452e26ca8d96b3ce74eef685b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "The number of permanent and portable classification count locations that were counted for a duration of 48 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_48",
+      "unit_type": "Numeric"
+    }
+  },
+  "a4498e4f34e20cbadf80374ba3d49d91551dd0366f59714cc5bcc6768cd2e61b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Factored annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "factored_aadt",
+      "unit_type": "Numeric"
+    }
+  },
+  "a487b5db392f54f7a2753a37ad2021b351ea7b5ff9368758611fce29f5e2aa18": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Denotation of overlapping segments",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "isprimary",
+      "unit_type": "Numeric"
+    }
+  },
+  "a6c324ca9aaeb699e674935e6f44566fdfeb0f456e8d0188987678648f524866": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type_descr",
+      "unit_type": "Text"
+    }
+  },
+  "a79419ef01e32466c7a19acd4a8852544bd11179b71a44623fd817e6e5d8460a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Method (Manual or Automated) used to collect most of the faulting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_method",
+      "unit_type": "Coded"
+    }
+  },
+  "a8c8b41684fcdc9bda19be45677a677ae4a5fb3c7895b80545bfbe4870bd51a1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date Accident Occurred",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashdate",
+      "unit_type": "Date"
+    }
+  },
+  "ab6dcda8b1f03f24fc894f6f464394d2b3fc41236e086f16b11863839907ac43": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of TMC Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmctype",
+      "unit_type": "Text"
+    }
+  },
+  "acd02dcd9a878fd6dc01910a679f3e51cbd9dd2e11fab3dfeb21dda1c4413e1f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic Seasonal Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_season",
+      "unit_type": "Numeric"
+    }
+  },
+  "ad287179b6b36ecd9b5266cb41208e468fd830f73a8033599e738f94a58db6dc": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_limit",
+      "unit_type": "Numeric"
+    }
+  },
+  "adcf3e2867e7a14fd58004208df9f96a63671ae459b3330537b6e1a4e0067b76": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Code Start Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "active_start_date",
+      "unit_type": "Date"
+    }
+  },
+  "ae704ca4914d069f4ecddcda16ee47aaad9aca1086aeb98c3423708574bdf124": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "City Location",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "city_name",
+      "unit_type": "Text"
+    }
+  },
+  "b03ccc963add550f153bc883a2a969c7dab19fa7d970f0b6a180327a3b2cda88": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "First Harmful Event Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "u1_first_harmful_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "b2a31830dd4e19ef964551f13cd61ac68dd78f67819787ea48c72f6cd6263306": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light",
+      "unit_type": "Coded"
+    }
+  },
+  "b3bb6ab671e5f213b35d013469ad83759c796f5bda1f45d8b21cdb0ec375eef4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Collision Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashseverity",
+      "unit_type": "Text"
+    }
+  },
+  "b5e32cca331c7769794e7d8a272b0795816c05a88c54608a3f8958667f7db892": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "State",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "state",
+      "unit_type": "Text"
+    }
+  },
+  "b757f080596864ba71f89aaaf651bfe3b1274d160eccd0094bfdb968fa0ddc2a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Crash Case Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "caseno",
+      "unit_type": "Numeric"
+    }
+  },
+  "ba4c4ff07698430dc86cb2cad268b6477519af2e59d0311fe5d9e0d0aa92a0fa": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of classification counts used for reporting purposes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_class_type",
+      "unit_type": "Coded"
+    }
+  },
+  "ba83e0c96b04218a216fb3c9c1ba7048d19d42c440021442c2be94a6894b822e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Associated Road Name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "roadname",
+      "unit_type": "Text"
+    }
+  },
+  "bb1498bab123f92662ef1c93196ffc18b8e1d26586339735c353969541d30a32": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  },
+  "bd6065a9d8005017d70961273da911c71ebcf1d5c288aec76a8280596e7adda1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable counter locations that were counted for a duration of 24 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_24",
+      "unit_type": "Numeric"
+    }
+  },
+  "c0ebb1ac77616e06f4459738b71226849fc30b6de8ac43db9130a0bbc04d1d95": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Quality assurance program exists for any traffic data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_qa",
+      "unit_type": "Coded"
+    }
+  },
+  "c17a2bcf9d244053bef7ba23ae77d11e5cdf86b417d3499000a5b94b21b5c12f": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route Identifier (Primary Key)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "nlfid",
+      "unit_type": "Text"
+    }
+  },
+  "c25b422e7ec22bd9816098964461a0d14d4237ab301c235ca66f2b9e4838d8b6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Classification Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "c2f49dc76a22d314e5dc4a03d0b462c9fa37d5f5d8d1611cff3fc60f93776f26": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "numberofla",
+      "unit_type": "Numeric"
+    }
+  },
+  "c3b46dacc2632cd8d8afdc591b0c55bcf6754499b79072d72b99ba4923fb522c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Combination Truck annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_combi_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "c4f7784fd37ec7e807b7da6c559408615165809aa2dc5742ecf414478df4b574": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Road class (TMC FRC)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "frc",
+      "unit_type": "Text"
+    }
+  },
+  "c6b028fa9da2eda9b5141ff4bd78026525a1ada60f2c0232987f39c050bc5d93": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Method (Manual or Automated) used to collect most of the faulting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "faulting_method",
+      "unit_type": "Coded"
+    }
+  },
+  "c721fc577e66bd01afe5eb1bb499a051c375f4dd674069706cc36742fe91c5ae": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Factored annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "factored_aadt",
+      "unit_type": "Numeric"
+    }
+  },
+  "c95ad1750d930dc60654fac3ab017085b3a31e986c48dd31b741aca16e8a1be9": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Timezone name",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "timezone_name",
+      "unit_type": "Text"
+    }
+  },
+  "cc12f8ea131e17e57c137cee74f67e874ae03c4996b5b65d9e964afffab9c1a6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Single-Unit Truck & Bus annual average daily traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_singl_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "cceea0b3db501725b3f6442658afd96fcae441636cff349ff08cd30fe60f45cf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Time (24-Hour Clock)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "time",
+      "unit_type": "Numeric"
+    }
+  },
+  "cea6648ed816708f6684891eaf0b563241bf5f16771a4b8f048aec468cfe9c28": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Severity",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "severity",
+      "unit_type": "Coded"
+    }
+  },
+  "cfc83308d9cf0376a8118f4bcd3ee83260aeff311379111fc33fb35d2f1acf45": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "wthr",
+      "unit_type": "Text"
+    }
+  },
+  "d07f2e08aeecfab20cd88dbc4a3cd22ac2c2fe5a1d3d2bccf81dd2ed9028127e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ramp Traffic Estimation Method",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "ramp_traf_est_method",
+      "unit_type": "Coded"
+    }
+  },
+  "d0f63e946573f1387a41cda47311a6a3dc6da2c727b09e0a7aaf63afb59ee536": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of permanent and portable counter locations that were counted for a duration of 24 hours or more",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "aadt_24",
+      "unit_type": "Numeric"
+    }
+  },
+  "d1580c7aa7aa5d9243e3b22483551f9eafbfc6ed058c62b3c2252f12eabf9507": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "posted_speed_limit",
+      "unit_type": "Coded"
+    }
+  },
+  "d20882d04888017ffe3c68d48c16869ae76fe468378b8c702072b6ab9db5fe2b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for measuring the percent of cracking (Cracking_Percent).",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "cracking_pct_equip",
+      "unit_type": "Coded"
+    }
+  },
+  "d3a2abfb24bccf4525c7a7c841fb296c11005a683394dc9197d3aca75a54cd00": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crsh_id",
+      "unit_type": "Numeric"
+    }
+  },
+  "d3ce0bcb765874872af83c4b957b5e0c0ea5b01ef19f952cad88980d59f083cc": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of TMC Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "tmctype",
+      "unit_type": "Text"
+    }
+  },
+  "d503eff1cec68c2115673d039879d1bcd70a7f9950515efffe5ce12ffcab567c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "median_type_descr",
+      "unit_type": "Text"
+    }
+  },
+  "d5595c4c3a501be11f2d3b33edd8932dfa3d756e766309f6409c931aa2baffac": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Ending Milepost of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "to_measure",
+      "unit_type": "Numeric"
+    }
+  },
+  "d604fdca714b37a5c4b937198c45d6f8c9bed22e86cb76cf57b09a9a59f59e76": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Numeric Value",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "value_numeric",
+      "unit_type": "Numeric"
+    }
+  },
+  "d78916801e36e0f361eb0f2c2c2839cff29551e6dca80161c05fd524c68c7d52": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crash_date",
+      "unit_type": "Date"
+    }
+  },
+  "d8516be019382a7d8832ac8b5a13713c8f1b840d49aebbc1bdfba68df085c455": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of sensors for the equipment used predominately for collection of rutting data",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_num_sensors",
+      "unit_type": "Coded"
+    }
+  },
+  "d90010f77c5a629135a038ca6b6442242b64b5e60bbff806e06390fe7bac9688": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "First Harmful Event Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "u1_first_harmful_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "d92ce88a8dc80b4e52be2ba4aafed12e6792caccaccdcec8a8578ba1aa8bff2d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Route ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "routeid",
+      "unit_type": "Text"
+    }
+  },
+  "dad8966ac43780ed4ddf4a2a30763d1973f80bc0f1379114732fe9cf92c6a958": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Beginning Longitude",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "startlong",
+      "unit_type": "Numeric"
+    }
+  },
+  "dbdc3b9023fed3f2c5d87b27cb2c4a7f525f605fbc9511aea96ab883c98f16f6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of volume counts used for reporting purposes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_volume_type",
+      "unit_type": "Coded"
+    }
+  },
+  "dca7a17d6f841eb6721a0de581dd6885e3be22aad71b089ce1f5f0a4dc399537": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crsh_id",
+      "unit_type": "Numeric"
+    }
+  },
+  "dd606be1c48b6dd1c1f446336cb25cef256f5ad79372130331076a85a5538842": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "accident_date",
+      "unit_type": "Date"
+    }
+  },
+  "de085ac3ac19fdc543e213cdbf9978d583a968dfd6be06f746b7e46b2c281cea": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Longitudinal distance between the outputs of a profile index (IRI) value. (Ref: AASHTO Designation: M328-14; 3.1.15)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "iri_report_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "de15c237eb6d347a1ac3db808259a16895187cb2b8b1361d06f99000e23f3717": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Code End Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "active_end_date",
+      "unit_type": "Date"
+    }
+  },
+  "de9300f9154b48fc11282e73afecebe7d7f56ee22754d51de165138349c394d4": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date and Time Crash Occurred",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "date_time_of_incident",
+      "unit_type": "Date"
+    }
+  },
+  "df25218b116d9bb02632a1b72e91f10d2e1b3292d789baf1b03f053b4f285aaf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Rural or Urban",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "is_urban",
+      "unit_type": "Text"
+    }
+  },
+  "df899ef2d1de8246fcc5547ce6b756fc3b29faf45b439f296955d6cb732bfaf6": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Numerical road order of TMC code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "road_order",
+      "unit_type": "Numeric"
+    }
+  },
+  "e03115a98e63689281f755a7e1671c9bb7f8d7f8140b41ad7217f3c632036372": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "End Log Point of Segment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "end_milepost",
+      "unit_type": "Numeric"
+    }
+  },
+  "e3169ce4fd9ece2bd0093545cb835eeab7dafb9a5ef9c303a7085d1de1c133ef": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Light Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "light",
+      "unit_type": "Coded"
+    }
+  },
+  "e3926658360f42e287ee2d0509c5fd1b42377392519793e661afa287b36cb9c3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of TMC Path on STRAHNET",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "strhnt_pct",
+      "unit_type": "Numeric"
+    }
+  },
+  "e57b918c64f092c53c6e0ee0c54788ff6f15f9e7f6c2cd98aeb2be38299d0687": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather",
+      "unit_type": "Text"
+    }
+  },
+  "e61102eca81d84ed2f6a5fc3724f0b17099b37745176ae05069a2c8beffedfe7": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of equipment used predominately for collection of rutting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_equip_type",
+      "unit_type": "Coded"
+    }
+  },
+  "e6aec3f6e9fb574215a88879a33520c896910e01ed9806e1db3db2aa2a18fe1c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Date of Incident",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "acc_date",
+      "unit_type": "Date"
+    }
+  },
+  "e6d2633f69805b6de8e872ab97d3bb03763a168e3048b3cba2042a439fda2ddf": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Median Divided Indicator",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "divided_indicator",
+      "unit_type": "Coded"
+    }
+  },
+  "e6ffd201f859a134fff93ecfbb701ae1df9908f3dfc46b41a04b8258d76b661d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Percent of TMC Path on NHS",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "nhs_pct",
+      "unit_type": "Numeric"
+    }
+  },
+  "e968cb0eba1e822a7881a65016a73cc8de8b327c1678dfae413fd095cc21ea4a": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Crash ID",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "crashid",
+      "unit_type": "Numeric"
+    }
+  },
+  "ed93fe0d021f5ab67c6d29f7ae3870f966a580f6daf0c082c66023aa5e52c6d3": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Country",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "country",
+      "unit_type": "Text"
+    }
+  },
+  "eddc405cc7089f107a06f84335138f5973346037a7f7900db26185db703c46ad": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "wthr",
+      "unit_type": "Text"
+    }
+  },
+  "ee7603612c2c403d6a821f115bb19c1d9877dcd2ecf67562215d3e8a1d859640": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "numberofla",
+      "unit_type": "Numeric"
+    }
+  },
+  "ef50b1eb418b12904fe13d002e2ea0fee9b102511bd84563d45f0a008c03c889": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Roadway Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "sp_lim",
+      "unit_type": "Numeric"
+    }
+  },
+  "ef7d36f46dc481d582d5624a8cb026ca37b37f6dad0195238e519e79bc397478": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Point Location Type",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "type",
+      "unit_type": "Text"
+    }
+  },
+  "f24fb57756e367badd06468300949d34bedb04f399d1708172135bfef2813a5e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "TMC Code End Date",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "active_end_date",
+      "unit_type": "Date"
+    }
+  },
+  "f266ab90caf16cf24e0b12d3066ac7884723bf20d6c2d6fcdf7e04c4f335334d": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Type of volume counts used for reporting purposes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "travel_volume_type",
+      "unit_type": "Coded"
+    }
+  },
+  "f353a4c361f8e92bbe24ab735fa5dafb7fca6cfb24effa43fecf0868f3e81d47": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "For manual rutting method: sampling interval. (Ref: AASHTO Designation R48-10(2013); 7.1.6) or For automatic rutting method: report interval-the travel distance between the reported data. (Ref: AASHTO Designation PP70-14 (2016); 4.2)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_interval",
+      "unit_type": "Numeric"
+    }
+  },
+  "f50014cd40a5675eb64277852aa1ff3be83b0d3f24a0dc56b60e47ff9f1fb240": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Posted Speed Limit",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "speed_limit",
+      "unit_type": "Numeric"
+    }
+  },
+  "f68f6985bea7c56923e7b78dc2938d3554d63da60b036437ca0ce9abfb37a9c1": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Estimated Unidirectional Thru Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thrulanes_unidir",
+      "unit_type": "Numeric"
+    }
+  },
+  "f69ba375b193c89606cc082f708676a5bdc5ae077775bd3532424b6e66c425be": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Unique Identification Number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "document_nbr",
+      "unit_type": "Numeric"
+    }
+  },
+  "f76edf7df493dd5b7002bd75e41a3631e20e9c6913f22e936b667b9c480cfe98": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Through Lanes",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thru_lane_count",
+      "unit_type": "Numeric"
+    }
+  },
+  "f8452c48d1b50102e9da0531d62f03b6c93ef132c6e7dc32df939cabd445d13c": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Reporting method for pavement distresses and related data items (e.g., IRI, PSR, Surface Type, etc.) associated with divided Interstate roadway sections",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "pave_rep_method",
+      "unit_type": "Coded"
+    }
+  },
+  "f87353d5583525b6c95af79eab19e37f95c92bbba3e1b493ec84410714099d61": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Number of Lanes - Total",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "thrulanecount",
+      "unit_type": "Numeric"
+    }
+  },
+  "f8f7cc17d84049b9bc2c8cc60c375e1198fd5b436a92d810e9bb009022c888c2": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Class Seasonal Adjustment",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "class_season",
+      "unit_type": "Coded"
+    }
+  },
+  "f9bbaba25b1732d55e22022723b7e85b1314e17f583a1cb418d6d832245ea53b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Federal Functional Classification",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "functional_class",
+      "unit_type": "Text"
+    }
+  },
+  "fa37f18e9b3476b4d1c758583e6aa90cf00add2e1baf47f1d1b4759abf5619df": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Roadway Surface Condition",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rdsurf",
+      "unit_type": "Text"
+    }
+  },
+  "fb9d0eca2e88c0963156289dce2c984508a7afbc7efa7146a78aeeab56bef9d0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Road Surface State",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "road_cond_primary_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "fce9524d1676c192632bffd946bffd41048a48d6ecac34735f8bc6f17c50f461": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Common name or route number",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "roadnumber",
+      "unit_type": "Text"
+    }
+  },
+  "fd49585bab5d4cbaa7e2cb82d340026fe51f8c4015ce16b5527020958ab3778b": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Weather Category Code",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "weather_cond_cd",
+      "unit_type": "Coded"
+    }
+  },
+  "fdc676ebd6138c9732e6a51fda07f36eb6401fe15efa9a39ff48ff46010295a0": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Method (Manual or Automated) used to collect most of the rutting data.",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "rutting_method",
+      "unit_type": "Coded"
+    }
+  },
+  "fee9b627a4cc211ae0ccf09ac22fc15f6f7463de6191a0bff79ad0fac6aa859e": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Road class (TMC FRC)",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "frc",
+      "unit_type": "Text"
+    }
+  },
+  "fffc7119602d42ec06b2611b2c4a9b5473c8626718a0a79278c972054d857041": {
+    "normalization_source": "offline_fallback",
+    "normalized": {
+      "description": "Annual Average Daily Traffic",
+      "domain_category": "highway_safety_and_roadway_metadata",
+      "standard_name": "annual_average_daily_traffic",
+      "unit_type": "Numeric"
+    }
+  }
+}
